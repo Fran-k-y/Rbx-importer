@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voxenify Converter</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="container">
+
+<h1 class="logo">VOXENIFY</h1>
+<p class="sub">Roblox File Converter Tool</p>
+
+<div class="card">
+
+<input type="file" id="fileInput" accept=".rbxm,.rbxmx,.rbxl,.rbxlx">
+
+<div id="dropZone">Drag & Drop File Here</div>
+
+<div id="status">Ready</div>
+
+</div>
+
+<div class="card">
+
+<button onclick="mode='local'">LocalScript</button>
+<button onclick="mode='server'">Server</button>
+<button onclick="mode='module'">Module</button>
+
+<br><br>
+
+<button onclick="copyOut()">Copy</button>
+
+<textarea id="output"></textarea>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
